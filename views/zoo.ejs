@@ -3,8 +3,38 @@
   <head>
     <meta charset="utf-8" />
     <title>Zoo</title>
-    <link rel="stylesheet" href="/public/main.css">
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
+    <form method="post">
+      <label>
+        <p>
+          Az állat neve:<br />
+          <input type="text" name="name" />
+        </p>
+      </label>
+      <label>
+        <p>
+          Az állat életkora:<br />
+          <input type="number" name="age" />
+        </p>
+      </label>
+      <label>
+        <p>
+          Az állat fajtája:<br />
+          <select name="species">
+            <option>Macska</option>
+            <option>Medve</option>
+            <option>Aligátor</option>
+            <option>Gyík</option>
+          </select>
+        </p>
+      </label>
+      <label>
+        <p>
+          <input type="submit" name="OK" />
+        </p>
+      </label>
+    </form>
   </body>
 </html>
