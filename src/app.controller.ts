@@ -11,6 +11,14 @@ export class AppController {
   @Post()
   @Render('animal')
   phoneHandler(@Body() Body: AnimalDts): object {
+    if (Body.name == null || Body.name == '') {
+      throw new Error('Az állat neve nem lehet üres!');
+    }
+    if (Body.age < 0 || Body.age == null) {
+      throw new Error(
+        'Az állat életkorának nagyobbnak kell lennie mint nulla!',
+      );
+    }
     return Body;
   }
 }

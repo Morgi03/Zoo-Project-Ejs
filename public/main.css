@@ -1,0 +1,10 @@
+.imgs {
+  width: 30%;
+}
+#main {
+  margin: auto;
+  display: table;
+}
+body {
+  background-color: rgb(187, 212, 233);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Zoo</title>
+    <link rel="stylesheet" href="/main.css" />
+  </head>
+  <body>
+    <div id="main">
+      <p>Az állat neve: <%= name %></p>
+      <p>Életkora: <%= age %></p>
+      <p>Fajtája: <%= species %></p>
+
+      <% let s = species %>
+      <% if ("Oroszlán" == s) { %>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Lion_waiting_in_Namibia.jpg/1200px-Lion_waiting_in_Namibia.jpg"
+        alt="Oroszlán"
+        class="imgs"
+      />
+      <% } %>
+
+      <% if ("Medve" == s) { %>
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/1200px-2010-kodiak-bear-1.jpg"
+          alt="Medve"
+          class="imgs"
+        />
+        <% } %>
+
+        <% if ("Aligátor" == s) { %>
+          <img
+            src="https://pic.weblogographic.com/img/news/346/difference-between-alligator.jpg"
+            alt="Aligátor"
+            class="imgs"
+          />
+          <% } %>
+
+          <% if ("Gyík" == s) { %>
+            <img
+              src="https://www.littlepassports.com/wp-content/uploads/shutterstock_313348286-960x637.jpg"
+              alt="Gyík"
+              class="imgs"
+            />
+            <% } %>
+    
+    </div>
+  </body>
+</html>

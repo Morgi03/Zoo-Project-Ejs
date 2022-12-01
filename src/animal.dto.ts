@@ -1,5 +1,5 @@
 export class AnimalDts {
   name: string;
-  age: string;
+  age: number;
   species: string;
 }
