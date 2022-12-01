@@ -1,4 +1,5 @@
 import { Get, Controller, Render, Body, Post } from '@nestjs/common';
+import { AnimalDts } from './animal.dto';
 
 @Controller()
 export class AppController {
@@ -9,7 +10,7 @@ export class AppController {
   }
   @Post()
   @Render('animal')
-  phoneHandler(@Body() Body: object): object {
+  phoneHandler(@Body() Body: AnimalDts): object {
     return Body;
   }
 }
